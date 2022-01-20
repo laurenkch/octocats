@@ -21,41 +21,64 @@
 .image-footer {
     position: relative;
     border-bottom: 1px solid rgb(211,211,211);
+    height: 50px;
+    font-family: sans-serif;
 }
 .image-caption {
-    position: relative;
-    top: 0;
-    left: 14em;
-    width: 180px;
-    overflow: auto;
-    text-align: right;
-}
-.image-caption img {
     float: right;
-    max-height: 40px;
+    width: 100%;
+    overflow: auto;
+    height: 60px;
+    text-align: right;
 }
 
 .image-footer > span:first-child {
     position: absolute;
-    top: 34%;
+    top: 26%;
     left: 0;
     color: 	rgb(211,211,211);
 }
+
 .authors {
     float: right;
 }
 .authors img {
     border: none;
     border-radius: 10%;
-    margin:0.3rem;
-    max-height: 20px;
+    max-height: 30px;
+    min-height: 30px;
+    margin-top: -7px;
 
 }
-li::marker {
-    content: "\25BC";
-    color: 	rgb(211,211,211);
+.image-caption span, .image-caption a {
+    display: inline-block;
+    padding-top: 12px;
+}
+.image-caption > span:first-child {
+    margin-left: 20px;
+}
+.image-caption li {
+    list-style: none;
+    list-style-position: inside;
+}
+li::before {
+    content: "\025E3";
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -11px;
+    right: 6px;
+    color: rgb(211,211,211);
+    font-size: 0.8em;
 }
 
 span {
     color: gray;
+    font-weight: bold;
 }
+
+a:link, a:visited, a:focus, a:hover, a:active {
+    color: 	rgb(60,60,60);
+    text-decoration: none;
+    font-weight: bold;
+}
+
