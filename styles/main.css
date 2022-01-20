@@ -61,7 +61,7 @@
     list-style: none;
     list-style-position: inside;
 }
-li::before {
+.image-caption li::before {
     content: "\025E3";
     position: absolute;
     transform: rotate(-45deg);
