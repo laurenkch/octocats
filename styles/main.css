@@ -2,5 +2,60 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    
+            overflow-wrap: break-word;
+            word-break: break-all;
   }
+.octodex {
+    display: inline-block;
+}
+.octocat {
+    display: inline-block;
+    width: 31%;
+    margin: 0.65rem;
+}
+.octocat img {
+    max-width: 100%;
+    border: 1px solid 	rgb(211,211,211);
+    border-radius: 1%;
+}
+.image-footer {
+    position: relative;
+    border-bottom: 1px solid rgb(211,211,211);
+}
+.image-caption {
+    position: relative;
+    top: 0;
+    left: 14em;
+    width: 180px;
+    overflow: auto;
+    text-align: right;
+}
+.image-caption img {
+    float: right;
+    max-height: 40px;
+}
+
+.image-footer > span:first-child {
+    position: absolute;
+    top: 34%;
+    left: 0;
+    color: 	rgb(211,211,211);
+}
+.authors {
+    float: right;
+}
+.authors img {
+    border: none;
+    border-radius: 10%;
+    margin:0.3rem;
+    max-height: 20px;
+
+}
+li::marker {
+    content: "\25BC";
+    color: 	rgb(211,211,211);
+}
+
+span {
+    color: gray;
+}
